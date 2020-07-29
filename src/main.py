@@ -1,8 +1,14 @@
-# Resolve the problem!!
+import os
+import sys
+import re
 
 
 def run():
-    # Start coding here
+    with open('encoded.txt', 'r', encoding='utf-8') as f:
+        text = f.read()
+        mensaje = re.findall("[a-z]",text)
+        print(mensaje)
+
 
 
 if __name__ == '__main__':
